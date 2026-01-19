@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz Web</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo"><h2>MonPortfolio</h2></div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Accueil</a></li>
+                <li><a href="../pages/quizz.html" class="nav-link active">Quizz</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="quizz-section">
+        <div class="container">
+            <h1 class="section-title">Quizz Technologies Web</h1>
+            <form id="quizz-form">
+
+                <!-- Question 1 -->
+                <div class="question">
+                    <p>1. Quel langage est utilisé pour styliser une page web ?</p>
+                    <input type="radio" name="q1" value="HTML"> HTML<br>
+                    <input type="radio" name="q1" value="CSS"> CSS<br>
+                    <input type="radio" name="q1" value="JavaScript"> JavaScript<br>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question">
+                    <p>2. Quelle balise HTML définit un lien ?</p>
+                    <input type="radio" name="q2" value="a"> &lt;a&gt;<br>
+                    <input type="radio" name="q2" value="link"> &lt;link&gt;<br>
+                    <input type="radio" name="q2" value="href"> &lt;href&gt;<br>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question">
+                    <p>3. Quelle est la bonne façon d’inclure un script JS externe ?</p>
+                    <input type="radio" name="q3" value="script src"> &lt;script src="fichier.js"&gt;&lt;/script&gt;<br>
+                    <input type="radio" name="q3" value="link src"> &lt;link src="fichier.js"&gt;<br>
+                    <input type="radio" name="q3" value="import src"> &lt;import src="fichier.js"&gt;<br>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question">
+                    <p>4. Quelle propriété CSS change la couleur du texte ?</p>
+                    <input type="radio" name="q4" value="color"> color<br>
+                    <input type="radio" name="q4" value="background-color"> background-color<br>
+                    <input type="radio" name="q4" value="font-size"> font-size<br>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="question">
+                    <p>5. Quel attribut définit la source d’une image ?</p>
+                    <input type="radio" name="q5" value="src"> src<br>
+                    <input type="radio" name="q5" value="href"> href<br>
+                    <input type="radio" name="q5" value="alt"> alt<br>
+                </div>
+
+                <!-- Question 6 -->
+                <div class="question">
+                    <p>6. Quel langage est interprété côté serveur ?</p>
+                    <input type="radio" name="q6" value="PHP"> PHP<br>
+                    <input type="radio" name="q6" value="HTML"> HTML<br>
+                    <input type="radio" name="q6" value="CSS"> CSS<br>
+                </div>
+
+                <!-- Question 7 -->
+                <div class="question">
+                    <p>7. Quelle balise HTML définit un paragraphe ?</p>
+                    <input type="radio" name="q7" value="p"> &lt;p&gt;<br>
+                    <input type="radio" name="q7" value="div"> &lt;div&gt;<br>
+                    <input type="radio" name="q7" value="span"> &lt;span&gt;<br>
+                </div>
+
+                <!-- Question 8 -->
+                <div class="question">
+                    <p>8. Quelle méthode JS permet d’afficher une alerte ?</p>
+                    <input type="radio" name="q8" value="alert()"> alert()<br>
+                    <input type="radio" name="q8" value="console.log()"> console.log()<br>
+                    <input type="radio" name="q8" value="prompt()"> prompt()<br>
+                </div>
+
+                <!-- Question 9 -->
+                <div class="question">
+                    <p>9. Quel sélecteur CSS sélectionne toutes les balises &lt;p&gt; ?</p>
+                    <input type="radio" name="q9" value="p"> p<br>
+                    <input type="radio" name="q9" value=".p"> .p<br>
+                    <input type="radio" name="q9" value="#p"> #p<br>
+                </div>
+
+                <!-- Question 10 -->
+                <div class="question">
+                    <p>10. Quelle propriété CSS change la taille de la police ?</p>
+                    <input type="radio" name="q10" value="font-size"> font-size<br>
+                    <input type="radio" name="q10" value="text-size"> text-size<br>
+                    <input type="radio" name="q10" value="size"> size<br>
+                </div>
+
+                <button type="submit">Valider</button>
+            </form>
+
+            <div id="result"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+
+    <script src="../js/quizz.js"></script>
+</body>
+</html>
